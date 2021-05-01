@@ -1,9 +1,9 @@
 import axios from "axios";
 
-const baseUrl = 'https://postbox-mernstack.herokuapp.com'
+const baseUrl = 'https://postbox-mernstack.herokuapp.com/'
 
 export default {
-    postMessage(url = baseUrl + "") {
+    postMessage(url = baseUrl + '') {
         return {
             fetchAll: () => axios.get(url),
             fetchById: id => axios.get(url + id),
